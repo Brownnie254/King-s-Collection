@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        #sidebar {
+            height: 400px;
+            margin-top: 20px;
+
+        }
+
+        .img-size {
+            height: 400px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #banner {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            background-color: black;
+        }
+
+        .elevate:hover {
+            transform: scale(1.1);
+
+        }
+
+        img-card-size .elevate {
+            transition: 0.6s ease;
+        }
+
+        .img-card-size {
+            height: 200px;
+        }
+
+        .style-icon {
+            color: black;
+            margin-left: 30px;
+            background-color: white;
+            border-radius: 100%;
+            padding: 7px;
+            margin-right: 16px;
+            text-align: center;
+
+        }
+
+        #banner1 {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            background-color: orangered;
+        }
+
+        #banner2 {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <section class="row">
+        <div class="col-md-12">
+            <!-- navbar started here.... -->
+
+            <nav class="navbar navbar-expand-md navbar-light bg-light shadow">
+                <div class="container-fluid">
+
+                    <!-- navbar-brand(a) -->
+                    <a href="tabs.html" class="navbar-brand"><span
+                            style="color: gold; font-weight: 900; text-decoration: overline;">King's Collection</span>
+                    </a>
+
+                    <!-- toggler button(changes by collapsing) -->
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- navbar-nav(navigation) -->
+                    <div class="collapse navbar-collapse" id="navigation">
+
+                        <ul class="navbar-nav me-auto">
+
+                            <li class="nav-item">
+                                <a href="" class="nav-link active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Services</a>
+                            </li>
+
+
+
+                            <!-- nav-items with dropdowns -->
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                    id="dropDown">Products</a>
+
+                                <ul class="dropdown-menu">
+                                    <li> <a href="schoolbags.html" class="dropdown-item"> School Bags </a> </li>
+
+                                    <li> <a href="#" class="dropdown-item"> Laptop Bags </a> </li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+
+                                    <li> <a href="#" class="dropdown-item"> PlayStation Bags </a> </li>
+
+                                    <li> <a href="collegebags.html" class="dropdown-item"> College Bags </a> </li>
+
+
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="" class="nav-link disabled"> Coming Soon </a>
+                            </li>
+
+                        </ul>
+
+                        <div class="d-flex">
+                            <input type="search" placeholder="Search" class="form-control me-2">
+                            <button class="btn btn-outline-success">Search</button>
+                        </div>
+
+                        <!-- user profile -->
+
+                        <li class="nav-item navbar-nav nav-link dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="dropDown"> <img
+                                    src="profiles/c1.jpeg" alt="" width="50px" height="50px" class="rounded-pill"> Admin
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li> <a href="tabs.html" class="dropdown-item"> <span></span> My Profile</a> </li>
+                                <li> <a href="#" class="dropdown-item"> Logout</a> </li>
+
+                                <li> <a href="#" class="dropdown-item"> Profile </a> </li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
+
+                                <li> <a href="#" class="dropdown-item"> Register </a> </li>
+
+                                <li> <a href="#" class="dropdown-item"> Login </a> </li>
+
+
+
+                            </ul>
+                        </li>
+
+
+                    </div>
+
+
+                </div>
+
+            </nav>
+
+            <!-- navbar ends -->
+
+
+        </div>
+
+    </section>
+
+    <!-- sidebar(3) and a carousel(9)-->
+    <section class="row">
+        <!-- sidebar 3 grids -->
+        <div class="col-md-3">
+
+            <div class="container">
+
+                <div class="card shadow" id="sidebar">
+                    <!-- accordions -->
+                    <h3 class="text-center text-warning" style="text-decoration: underline;">Quick Links</h3>
+                    <div class="accordion" id="myAccordion">
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#accessories">Accessories Bags</button>
+
+                            </h5>
+                            <div id="accessories" class="collapse accordion-collapse" data-bs-parent="myAccordion">
+                                <div class="accordion-body">
+                                    <a href="collegebags.html" class="nav-link">College Bags</a>
+                                    <a href="#" class="nav-link">Laptop Bag</a>
+                                    <a href="schoolbags.html" class="nav-link">School Bags</a>
+
+                                </div> <a href="" class="nav-link active"></a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#Fashion">Fashion Bags</button>
+
+                            </h5>
+                            <div id="Fashion" class="collapse accordion-collapse" data-bs-parent="myAccordion">
+                                <div class="accordion-body">
+                                    <a href="collegebags.html" class="nav-link">Stylish Bags</a>
+                                    <a href="#" class="nav-link">Luxury Bag</a>
+                                    <a href="schoolbags.html" class="nav-link">Shoulder Bags</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#Travel">Travel Bags</button>
+
+                            </h5>
+                            <div id="Travel" class="collapse accordion-collapse" data-bs-parent="myAccordion">
+                                <div class="accordion-body">
+                                    <a href="collegebags.html" class="nav-link">Luggauge Bags</a>
+                                    <a href="#" class="nav-link">Bulky Bags</a>
+                                    <a href="schoolbags.html" class="nav-link">Trolley Bags</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!-- accordion ends -->
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- carousel -->
+        <div class="col-md-9">
+            <div class="container">
+                <div class="carousel slide" id="slider" data-bs-ride="carousel">
+                    <!-- carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#slider" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#slider" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#slider" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#slider" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#slider" data-bs-slide-to="4"></li>
+
+                    </ol>
+
+                    <!-- carousel-inner(slideshow)(div) -->
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="profiles/83917338.jpg" alt="" class="img-size w-100">
+                            <div class="carousel-caption d-block">
+                                <h3>Mens bags available</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Graphic1.jpg" alt="" class="w-100 img-size">
+                            <div class="carousel-caption d-block">
+                                <h3>school bags available</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Graphic2.webp" alt="" class="w-100 img-size">
+                            <div class="carousel-caption d-block">
+                                <h3>ladies bags available</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/graphic3.jpeg" alt="" class="w-100 img-size">
+                            <div class="carousel-caption d-block">
+                                <h3>ladies bags available</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item" id="banner">
+                            <h2 CLASS="text-white text-center pt-5">SALES ANNIVERSSARY THIS JUNE!!!</h2>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <!-- carousel controls(a) -->
+                    <a href="#slider" class="carousel-control-prev" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#slider" class="carousel-control-next" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="row">
+        <div class="col-md-6">
+            <div class="container">
+                <div class="carousel slide" id="slider1" data-bs-ride="carousel">
+                    <!-- carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#slider1" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#slider1" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#slider1" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#slider1" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#slider1" data-bs-slide-to="4"></li>
+                        <li data-bs-target="#slider1" data-bs-slide-to="5"></li>
+                        <li data-bs-target="#slider" data-bs-slide-to="6"></li>
+
+                    </ol>
+
+                    <!-- carousel-inner(slideshow)(div) -->
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="pininterest/bag1.jpg" alt="" class="img-size w-100">
+                            <div class="carousel-caption d-block">
+                                <h3>Mens bags available</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pininterest/bag2.jpg" alt="" class="w-100 img-size">
+                            <div class="carousel-caption d-block">
+                                <h3>school bags available</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pininterest/bag3.jpg" alt="" class="w-100 img-size">
+                            <div class="carousel-caption d-block">
+                                <h3>ladies bags available</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pininterest/bag4.jpg" alt="" class="w-100 img-size">
+                            <div class="carousel-caption d-block">
+                                <h3>ladies bags available</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pininterest/bag5.jpg" alt="" class="w-100 img-size">
+                            <div class="carousel-caption d-block">
+                                <h3>ladies bags available</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pininterest/bag6.jpg" alt="" class="w-100 img-size">
+                            <div class="carousel-caption d-block">
+                                <h3>ladies bags available</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item" id="banner1">
+                            <h2 CLASS="text-white text-center pt-5">!!June Discounts!!</h2>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <!-- carousel controls(a) -->
+                    <a href="#slider1" class="carousel-control-prev" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#slider1" class="carousel-control-next" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="col-md-6">
+            <div class="container">
+                <div class="carousel slide" id="slider2" data-bs-ride="carousel">
+                    <!-- carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#slider2" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#slider2" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#slider2" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#slider2" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#slider2" data-bs-slide-to="4"></li>
+                        <li data-bs-target="#slider2" data-bs-slide-to="5"></li>
+                        <li data-bs-target="#slider" data-bs-slide-to="6"></li>
+
+
+                    </ol>
+
+                    <!-- carousel-inner(slideshow)(div) -->
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="pininterest/men1.jpg" alt="" class="img-size w-100">
+                            <div class="carousel-caption d-block">
+                                <h3>Brands</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pininterest/men2.jpg" alt="" class="w-100 img-size">
+                            <div class="carousel-caption d-block">
+                                <h3>Laptop bag</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pininterest/men3.jpg" alt="" class="w-100 img-size">
+                            <div class="carousel-caption d-block">
+                                <h3>Mens choice</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pininterest/men4.jpg" alt="" class="w-100 img-size">
+                            <div class="carousel-caption d-block">
+                                <h3>Men stylish</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pininterest/men5.jpg" alt="" class="w-100 img-size">
+                            <div class="carousel-caption d-block">
+                                <h3>Leather bag</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="pininterest/men6.jpg" alt="" class="w-100 img-size">
+                            <div class="carousel-caption d-block">
+                                <h3>Italian Design</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="btn btn-primary">Find Out</button>
+
+                            </div>
+
+                        </div>
+                        <div class="carousel-item" id="banner2">
+                            <h2 CLASS="text-white text-center pt-5">!!Best Deals!!</h2>
+
+
+                        </div>
+
+                    </div>
+
+                    <!-- carousel controls(a) -->
+                    <a href="#slider2" class="carousel-control-prev" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#slider2" class="carousel-control-next" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+    <!-- cards and modals -->
+    <h3 style="text-decoration: overline;" class="bg-warning p-3 mt-4">Our Top Brands and Deals</h3>
+    <section class="row">
+        <div class="col-md-3">
+            <div class="card elevate text-center">
+                <img src="images/Graphic2.webp" alt="bags" class="mx-auto img-card-size">
+                <div class="card body">
+                    <h5 class="card-title">Bags</h5>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <div class="card elevate text-center">
+                <img src="profiles/school2.jpeg" alt="bags" class="mx-auto img-card-size">
+                <div class="card body">
+                    <h5 class="card-title">Bags</h5>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <div class="card elevate text-center">
+                <img src="profiles/Collegebag1.jpeg" alt="bags" class="mx-auto img-card-size">
+                <div class="card body">
+                    <h5 class="card-title">Bags</h5>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-3">
+            <div class="card elevate text-center">
+                <img src="profiles/collegebag2.jpg" alt="bags" class="mx-auto img-card-size">
+                <div class="card body">
+                    <h5 class="card-title">Bags</h5>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" class="btn btn-warning">Add to Cart</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <section class="row">
+        <h3 style="text-decoration: underline; font-family: 'Times New Roman', Times, serif; font-weight: bolder;"
+            class="bg-danger p-3 mt-4 text-center ">Offer Collections</h3>
+        <section class="row">
+            <div class="col-md-3">
+                <div class="card elevate text-center">
+                    <img src="profiles/design1.jpeg" alt="bags" class="mx-auto img-card-size">
+                    <div class="card body">
+                        <h5 class="card-title">Bags</h5>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <a href="#" class="btn btn-warning">Add to Cart</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="card elevate text-center">
+                    <img src="profiles/design2.jpeg" alt="bags" class="mx-auto img-card-size">
+                    <div class="card body">
+                        <h5 class="card-title">Bags</h5>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <a href="#" class="btn btn-warning">Add to Cart</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="card elevate text-center">
+                    <img src="profiles/CollageMaker_1656844142519.jpg" alt="bags" class="mx-auto img-card-size">
+                    <div class="card body">
+                        <h5 class="card-title">Bags</h5>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <a href="#" class="btn btn-warning">Add to Cart</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="card elevate text-center">
+                    <img src="profiles/D5.jpeg" alt="bags" class="mx-auto img-card-size">
+                    <div class="card body">
+                        <h5 class="card-title">Bags</h5>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <a href="#" class="btn btn-warning">Add to Cart</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+    </section>
+    <!-- footer -->
+    <footer class="row" style="background-color: darkblue;">
+        <section class="row">
+            <div class="col-md-12 pt-3 pb-3 mt-2 mb-2">
+                <button class="btn btn-dark" style="margin-left: 580px; border-radius: 0px;">SIGN IN</button>
+
+            </div>
+
+
+        </section>
+
+
+        <section class="row">
+
+            <div class="col-md-3">
+
+            </div>
+
+
+            <div class="col-md-6 text-center mb-4">
+                <a href="https://facebook.com"><i class="fa fa-facebook style-icon"></i></a>
+                <a href="https://twitter.com"><i class="fa fa-twitter style-icon"></i></a>
+                <a href="https://linkedin.com"><i class="fa fa-linkedin style-icon"></i></a>
+                <a href="https://youtube.com"><i class="fa fa-youtube style-icon"></i></a>
+                <a href="https://instagram.com"><i class="fa fa-instagram style-icon"></i></a>
+                <a href="https://wifi.com"><i class="fa fa-wifi style-icon"></i></a>
+                <a href="https://github.com"><i class="fa fa-github style-icon"></i></a>
+
+            </div>
+
+            <div class="col-md-3">
+
+            </div>
+            <br>
+
+        </section>
+
+        <hr class="text-white">
+        <br>
+
+        <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, vel officiis.
+            Vitae fugiat ipsum eum quibusdam optio doloremque. Vitae, architecto! Possimus quasi aspernatur nobis esse
+            dolore optio! Laudantium quaerat autem repudiandae vel, voluptates neque itaque quod error placeat
+            voluptatum rerum, nulla dolor ipsum amet saepe inventore, doloremque quis id! Dolores.</p>
+
+        <i class="text-center mt-5 mb-3 text-white">&COPY; Brown Mark 2023</i>
+
+
+    </footer>
+
+</body>
+
+</html>

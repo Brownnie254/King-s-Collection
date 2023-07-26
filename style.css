@@ -1,0 +1,14 @@
+body{
+    background-color: bisque;
+}
+.display{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.center{
+    text-align: center;
+}
+.decorate{
+    text-transform: uppercase;
+}
